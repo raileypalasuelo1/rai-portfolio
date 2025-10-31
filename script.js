@@ -10,3 +10,10 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 sections.forEach(section => observer.observe(section));
+
+const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
